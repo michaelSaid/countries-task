@@ -3,10 +3,15 @@ package com.task.countries.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.task.countries.model.Country;
 import com.task.countries.repository.CountryRepository;
 
+import jakarta.transaction.Transactional;
+
+@Service
+@Transactional
 public class CountryService {
     @Autowired
     private CountryRepository countryRepository;
