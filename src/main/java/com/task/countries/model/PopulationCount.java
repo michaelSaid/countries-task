@@ -14,7 +14,7 @@ public class PopulationCount {
     private String value;
 
     @ManyToOne
-    @MapsId("code")
+    @MapsId("name")
     private Country country;
 
     public String getValue() {

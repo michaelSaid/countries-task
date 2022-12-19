@@ -14,8 +14,9 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name = "countries")
 public class Country {
-    private String name;
     @Id
+    private String name;
+
     @Column(name = "code")
     private String code;
     private String iso3;

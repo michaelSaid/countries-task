@@ -19,7 +19,7 @@ public class CountryService {
         countryRepository.save(country);
     }
 
-    public Country getCountry(String code) {
-        return countryRepository.findById(code).orElse(null);
+    public Country getCountry(String name) {
+        return countryRepository.findById(name).orElse(null);
     }
 }

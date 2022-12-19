@@ -7,8 +7,8 @@ import jakarta.persistence.Embeddable;
 
 @Embeddable
 public class PopulationCountPK implements Serializable {
-    @Column(name = "code")
-    private String code;
+    @Column(name = "name")
+    private String name;
     @Column(name = "year")
     private String year;
 }
